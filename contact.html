@@ -6,13 +6,16 @@
 <title>Contact &amp; Book an Appointment | Aarogya Hospital</title>
 <meta name="description" content="Book an appointment at Aarogya Hospital, Banjara Hills, Hyderabad. Call +91 40 2345 6789, visit us, or fill out the appointment form online.">
 <meta name="keywords" content="book appointment Aarogya Hospital, contact hospital Banjara Hills, Hyderabad hospital phone number">
-<link rel="canonical" href="https://aarogyahospital.example/contact.html">
+<link rel="canonical" href="https://your-netlify-site.netlify.app/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact & Book an Appointment | Aarogya Hospital">
 <meta property="og:description" content="Book an appointment at Aarogya Hospital, Banjara Hills, Hyderabad.">
-<meta property="og:url" content="https://aarogyahospital.example/contact.html">
+<meta property="og:url" content="https://your-netlify-site.netlify.app/contact.html">
+<meta property="og:image" content="https://your-netlify-site.netlify.app/assets/og-image.svg">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#1E4D45">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +39,7 @@
 <header class="site-header">
   <div class="container nav-row">
     <a href="index.html" class="brand">
-      <svg class="mark" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="7" fill="#1E4D45"/><path d="M8 17 L12.5 17 L14.5 12 L17.5 22 L19.5 17 L24 17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <img class="mark" src="assets/favicon.svg" alt="Aarogya Hospital emblem">
       <span>Aarogya<small>Multi-Specialty Hospital</small></span>
     </a>
     <nav class="primary-nav" id="primary-nav">
@@ -141,12 +144,14 @@
             <span class="err-msg"></span>
           </div>
           <div class="field">
-            <label for="appt-time">Preferred time</label>
-            <select id="appt-time" name="time">
+            <label for="appt-time">Preferred time <span class="req">*</span></label>
+            <select id="appt-time" name="time" required>
+              <option value="">Select a preferred time</option>
               <option value="morning">Morning (8 AM&ndash;12 PM)</option>
               <option value="afternoon">Afternoon (12&ndash;4 PM)</option>
               <option value="evening">Evening (4&ndash;8 PM)</option>
             </select>
+            <span class="err-msg"></span>
           </div>
           <div class="field full">
             <label for="appt-message">Anything we should know?</label>
@@ -211,18 +216,7 @@
   </div>
 </footer>
 
-<script type="text/javascript">
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
-  s1.charset = 'UTF-8';
-  s1.setAttribute('crossorigin', '*');
-  s0.parentNode.insertBefore(s1, s0);
-})();
-</script>
-
+<script src="js/chatbot-config.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

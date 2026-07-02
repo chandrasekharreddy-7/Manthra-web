@@ -6,13 +6,16 @@
 <title>Aarogya Hospital | Multi-Specialty Care in Hyderabad</title>
 <meta name="description" content="Aarogya Hospital, Banjara Hills, Hyderabad — 24/7 emergency care and 10 specialist departments. Search doctors by department and book an appointment online.">
 <meta name="keywords" content="hospital in Hyderabad, multi-specialty hospital Banjara Hills, emergency care Hyderabad, doctor appointment Hyderabad, Aarogya Hospital">
-<link rel="canonical" href="https://aarogyahospital.example/index.html">
+<link rel="canonical" href="https://your-netlify-site.netlify.app/index.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aarogya Hospital | Multi-Specialty Care in Hyderabad">
 <meta property="og:description" content="24/7 emergency care and 10 specialist departments in Banjara Hills, Hyderabad. Find a doctor and book an appointment online.">
-<meta property="og:url" content="https://aarogyahospital.example/index.html">
+<meta property="og:url" content="https://your-netlify-site.netlify.app/index.html">
+<meta property="og:image" content="https://your-netlify-site.netlify.app/assets/og-image.svg">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta name="theme-color" content="#1E4D45">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +25,7 @@
   "@context": "https://schema.org",
   "@type": "Hospital",
   "name": "Aarogya Hospital",
-  "url": "https://aarogyahospital.example/",
+  "url": "https://your-netlify-site.netlify.app/",
   "telephone": "+91-40-2345-6789",
   "address": {
     "@type": "PostalAddress",
@@ -54,7 +57,7 @@
 <header class="site-header">
   <div class="container nav-row">
     <a href="index.html" class="brand">
-      <svg class="mark" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="7" fill="#1E4D45"/><path d="M8 17 L12.5 17 L14.5 12 L17.5 22 L19.5 17 L24 17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <img class="mark" src="assets/favicon.svg" alt="Aarogya Hospital emblem">
       <span>Aarogya<small>Multi-Specialty Hospital</small></span>
     </a>
 
@@ -90,11 +93,17 @@
         </div>
         <div class="hero-meta">
           <span><strong>Est. 2011</strong> · serving Banjara Hills &amp; Jubilee Hills</span>
-          <span><strong>10</strong> specialist departments</span>
+          <span><strong data-count="10">10</strong> specialist departments</span>
           <span><strong>24/7</strong> emergency &amp; trauma care</span>
         </div>
       </div>
-      <div class="hero-art">
+      <div class="hero-art" data-tilt-card>
+        <div class="clinic-orbit" aria-hidden="true">
+          <span class="orbit-ring"></span>
+          <span class="orbit-dot dot-one"></span>
+          <span class="orbit-dot dot-two"></span>
+          <img src="assets/hero-care.svg" alt="Doctor consulting a family inside a modern health clinic" loading="eager" width="640" height="480">
+        </div>
         <div class="glance">
           <h2>At a glance</h2>
           <ul>
@@ -321,19 +330,7 @@
   </div>
 </footer>
 
-<!-- Tawk.to live chat — replace YOUR_PROPERTY_ID/YOUR_WIDGET_ID with your own (tawk.to account, free) -->
-<script type="text/javascript">
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
-  s1.charset = 'UTF-8';
-  s1.setAttribute('crossorigin', '*');
-  s0.parentNode.insertBefore(s1, s0);
-})();
-</script>
-
+<script src="js/chatbot-config.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

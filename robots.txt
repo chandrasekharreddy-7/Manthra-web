@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aarogyahospital.example/sitemap.xml
+Sitemap: https://your-netlify-site.netlify.app/sitemap.xml
