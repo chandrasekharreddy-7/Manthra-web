@@ -1,30 +1,38 @@
-# Aarogya Hospital — Frontend Website Assignment
+# Aarogya Hospital Website
 
-Selected topic: **Health Care Website**
+A polished, responsive multi-page healthcare website built with **HTML5, CSS3, and vanilla JavaScript**. The project demonstrates frontend architecture, responsive design, accessibility basics, client-side interaction, and deployment preparation without requiring a build tool.
 
-A polished, original, multi-page static website for Aarogya Hospital / Health Clinic. It is built with plain **HTML5, CSS3, and vanilla JavaScript** so it can be hosted directly on GitHub and Netlify without a build step.
+## Features
+
+- Responsive layouts for mobile, tablet, and desktop
+- Multi-page navigation and reusable visual design
+- Hero section, calls to action, doctor finder, emergency information, and health tips
+- Services, diagnostics, health packages, and FAQ accordion
+- Filterable gallery with captions, alt text, and lightbox preview
+- Contact information, embedded map, and appointment form validation
+- Mobile navigation, scroll effects, counters, and interactive cards
+- Custom 404 page
+- Basic SEO and social-sharing metadata
+- Netlify-ready configuration
 
 ## Pages
 
-- `index.html` — home page with hero banner, CTA, doctor finder, emergency strip, and health tips
-- `about.html` — clinic story, milestones, doctors, mission, and care standards
-- `services.html` — departments, diagnostics, health packages, and FAQ accordion
-- `gallery.html` — filterable facility gallery with local image assets, captions, alt text, and lightbox preview
-- `contact.html` — contact details, map, and appointment form with validation
-- `404.html` — custom Netlify-friendly not-found page
+- `index.html` — landing page and key healthcare information
+- `about.html` — organisation story, doctors, mission, and care standards
+- `services.html` — departments, diagnostics, packages, and frequently asked questions
+- `gallery.html` — filterable facility gallery and lightbox
+- `contact.html` — contact information, map, and validated appointment form
+- `404.html` — custom not-found page
 
-## Assignment checklist covered
+## Technologies
 
-- Required pages and working navigation
-- Proper layout, sections, cards, buttons, footer, readable fonts, and consistent theme
-- Responsive mobile, tablet, and desktop design using CSS media queries
-- Basic SEO: unique title, meta description, meta keywords, canonical URL, Open Graph tags, one `h1` per page, internal links, and alt text
-- JavaScript interactivity: mobile menu, doctor filter/search, FAQ accordion, gallery filter, gallery lightbox, scroll reveal, 3D card tilt, counter animation, and appointment form validation
-- Netlify-ready static deployment using `netlify.toml`
-- New handcrafted SVG favicon/logo in `assets/favicon.svg`
-- Optional chatbot setup through one config file: `js/chatbot-config.js`
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- SVG assets
+- Netlify configuration
 
-## Folder structure
+## Project Structure
 
 ```text
 ├── index.html
@@ -39,75 +47,53 @@ A polished, original, multi-page static website for Aarogya Hospital / Health Cl
 │   ├── chatbot-config.js
 │   └── script.js
 ├── assets/
-│   ├── favicon.svg
-│   ├── logo.svg
-│   ├── hero-care.svg
-│   ├── gallery-reception.svg
-│   ├── gallery-emergency.svg
-│   ├── gallery-operation-theatre.svg
-│   ├── gallery-icu.svg
-│   ├── gallery-lab.svg
-│   ├── gallery-xray.svg
-│   ├── gallery-pediatric.svg
-│   ├── gallery-pharmacy.svg
-│   ├── gallery-care-team.svg
-│   └── og-image.svg
 ├── robots.txt
 ├── sitemap.xml
 ├── netlify.toml
 └── CHATBOT_SETUP.md
 ```
 
-## Run locally
+## Run Locally
 
-Open `index.html` directly in a browser, or run a small static server:
+Open `index.html` directly in a browser, or run a local static server:
 
 ```bash
 npx serve .
 ```
 
-## Chatbot setup
+## Optional Chatbot Configuration
 
-The website is ready for a chatbot link but does not load a broken placeholder by default.
+The chatbot integration is disabled until a valid embed URL is configured.
 
 1. Open `js/chatbot-config.js`.
-2. Paste your chatbot embed script URL inside `window.AAROGYA_CHATBOT_EMBED_URL`.
-3. Save and redeploy.
+2. Add the approved chatbot embed URL.
+3. Save and redeploy the website.
 
-Example:
+Do not commit private credentials or secret keys.
 
-```js
-window.AAROGYA_CHATBOT_EMBED_URL = "https://embed.tawk.to/PROPERTY_ID/WIDGET_ID";
-```
+## Deployment
 
-Full setup steps are in `CHATBOT_SETUP.md`.
+The site can be deployed as a static project on Netlify or GitHub Pages. No build command is required; publish the repository root.
 
-## Replace deployment URL before final submission
+Before publishing, update canonical URLs, Open Graph URLs, `robots.txt`, and `sitemap.xml` with the real deployed domain.
 
-After Netlify deploys your website, replace this placeholder everywhere:
+## Quality Highlights
 
-```text
-https://your-netlify-site.netlify.app
-```
+- Semantic page structure
+- Responsive media queries
+- Accessible image descriptions
+- Form validation
+- Clear folder organisation
+- Deployment and SEO preparation
 
-Use your real Netlify URL in:
+## Future Improvements
 
-- all canonical tags
-- Open Graph `og:url` and `og:image`
-- `robots.txt`
-- `sitemap.xml`
+- Add automated accessibility and HTML validation checks
+- Connect the appointment form to a secure backend
+- Add performance monitoring and image optimisation
+- Add screenshots and a verified live-demo link
+- Add end-to-end tests for navigation and forms
 
-## Netlify deployment
+## Project Status
 
-No build command is needed.
-
-- Publish directory: `.`
-- Build command: leave empty
-
-You can deploy by dragging this folder into Netlify or by connecting the GitHub repository.
-
-## Final submission placeholders
-
-- GitHub Repository Link: _paste your public GitHub repo link here_
-- Netlify Live Website Link: _paste your live Netlify link here_
-- Selected Topic: Health Care Website
+Active portfolio project. It is suitable for demonstrating frontend development skills, but any real healthcare deployment would require a secure backend, privacy controls, and professional review.
